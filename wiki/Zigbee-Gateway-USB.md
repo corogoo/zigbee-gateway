@@ -61,11 +61,12 @@
         
         如果没有[点此链接](https://www.wch.cn/download/CH341SER_ZIP.html)下载安装
 
-4. 运行ZigStar GW Multi tool，点击刷新按钮，在下来列表中选择正确的COM端口
+4. 运行ZigStar GW Multi tool，点击刷新按钮，在下拉列表中选择正确的COM端口
 
     <img src="../img/USB gateway/usb-gw-007.png" >
 
 5. 下载固件CC1352P2_CC2652P_launchpad_*.zip，并解压得到.HEX文件
+    
     [协调器](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin)
 
     [路由器](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin)
