@@ -16,9 +16,6 @@
 
 [速卖通Aliexpress](https://www.aliexpress.us/item/3256803441836847.html)
 
-***
-
-
 >## 使用方法
 
 - ### 在ZHA中使用

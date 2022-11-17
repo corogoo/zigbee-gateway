@@ -6,8 +6,8 @@
 2. 最大支持接入200+ zigbee设备;
 3. 板载BSL按键，支持通过USB/LAN进行固件升级;
 4. 用于外部天线的 SMA 天线端口;
-5. 通过通用的 CH340E/CH340C USB-UART 桥进行通信;
-6. 支持LAN Modbus进行通信;
+5. 默认支持LAN Modbus进行通信;
+6. 可选，通过通用的 CH340E/CH340C USB-UART 桥进行通信;
 7. 支持 Z-Stack coordinator/router固件;
 8. 即插即用，默认烧录coordinator固件。
 9. 支持[Z2M](https://www.zigbee2mqtt.io/)、[ZHA](https://www.home-assistant.io/integrations/zha/);
@@ -15,9 +15,6 @@
 >## 购买
 
 [速卖通Aliexpress](https://www.aliexpress.us/item/3256804554006317.html)
-
-***
-
 
 >## 使用方法
 

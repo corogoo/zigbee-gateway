@@ -16,9 +16,6 @@
 
 [速卖通Aliexpress](https://www.aliexpress.us/item/3256804554006317.html)
 
-***
-
-
 >## 使用方法
 
 1. 插入USB-C电源线（5V），插入网线；
@@ -74,4 +71,5 @@
     [路由器](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin)
 
 5. 运行ZigStar GW Multi tool，在输入框中输入网关ip:5000,从PC中选择 .hex 文件，勾选Erase,Write,Verify，不要勾选auto BSL, 点击start开始烧录固件。
+    
     <img src="../img/LAN gateway/LAN gateway-005.png" >
