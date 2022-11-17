@@ -29,7 +29,7 @@
 2. 选择对应端口
 <img src="../img/USB gateway/usb-gw-002.webp" >
 
-4. 流控默认不选
+3. 流控默认不选
 <img src="../img/USB gateway/usb-gw-003.webp" >
 
 4. 添加成功
@@ -44,7 +44,7 @@
 
     ```yaml
     serial:
-    port: /dev/ttyUSB0
+        port: /dev/ttyUSB0
     ```
 
 > ### 固件升级
