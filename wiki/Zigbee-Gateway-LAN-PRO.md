@@ -4,27 +4,34 @@
 
 1. TI CC2652P (RF-STAR RF-BM-2652P2)多协议无线模块，最大发射功率功率+20dBm;
 2. 最大支持接入200+ zigbee设备;
-3. 板载BSL按键，支持通过USB/LAN进行固件升级;
+3. 支持通过USB/LAN进行固件升级;
 4. 用于外部天线的 SMA 天线端口;
-5. 默认支持LAN Modbus进行通信;
-6. 可选，通过通用的 CH340E/CH340C USB-UART 桥进行通信;
+5. 两种工作模式:LAN Coordinator（默认） 或 USB Coordinator/Router
 7. 支持 Z-Stack coordinator/router固件;
 8. 即插即用，默认烧录coordinator固件。
 9. 支持[Z2M](https://www.zigbee2mqtt.io/)、[ZHA](https://www.home-assistant.io/integrations/zha/);
 
 >## 购买
 
-[速卖通Aliexpress](https://www.aliexpress.us/item/3256804554006317.html)
+[Zigbee LAN Gateway PRO](https://www.aliexpress.us/item/3256804557892073.html)
+
+[Zigbee POE Gateway PRO](https://www.aliexpress.us/item/3256804675805140.html) 
 
 >## 使用方法
 
 1. 插入USB-C电源线（5V），插入网线；
 
-2. 运行 [DTUConfigTool(点击下载)](https://www.coltsmart.com/download/DTUConfigTool_V5.1%E4%B8%AD%E6%80%A7%E7%89%88.rar)，点击“搜索设备”按钮，当搜索到设备之后，去掉自动获取ip选项，点击写入参数，复制网关的ip地址备用。
+2. POE版本支持IEEE802.3af标准，支持宽输入电压范围37Vdc ~ 57Vdc；***注意POE版本不需要USB供电***
 
-    **注意！！！其他参数不要修改！！！**
+3. 下载[ZigStar GW Multi tool](https://github.com/xyzroe/ZigStarGW-MT/releases)，请根据您的操作系统选择对应版本；
 
-<img src="../img/LAN gateway/LAN gateway-001.jpg" >
+4. 运行 ZigStar GW Multi tool，点击刷新按钮，在下拉列表中选择端口号是6638的地址，此时即可获得网关的IP地址；
+
+<img src="../img/LAN gateway/LAN gateway-006.png" >
+
+5. 在浏览器中输入网关的ip地址即可进入网关后台页面
+
+<img src="../img/LAN gateway/LAN gateway-007.png" >
 
 - ### 在ZHA中使用
     
@@ -40,9 +47,9 @@
 
 <img src="../img/LAN gateway/LAN gateway-003.png" >
 
-4. 输入 socket://ip_address:5000,data flow control: software,点击 “提交”。***请将“ip_address”替换为网关的ip***
+4. 输入 socket://ip_address:6638,data flow control: software,点击 “提交”。***请将“ip_address”替换为网关的ip***
 
-<img src="../img/LAN gateway/LAN gateway-004.png" >
+<img src="../img/LAN gateway/LAN gateway-008.png" >
 
 - ### 在Z2M中使用
 
@@ -53,7 +60,7 @@
 
     ```yaml
     serial:
-        port: tcp://ip_address:5000
+        port: tcp://ip_address:6638
     ```
     ***请将“ip_address”替换为网关的ip***
 > ### 固件升级
@@ -62,13 +69,17 @@
 
 2. 停止运行zha或z2m；
 
-3. 打开外壳，按住按键不放，插入USB，然后松开按键,插入网线并获取到ip地址；
-
-4. 下载固件CC1352P2_CC2652P_launchpad_*.zip，并解压得到.HEX文件
+3. 下载固件CC1352P2_CC2652P_launchpad_*.zip，并解压得到.HEX文件
     
     [协调器](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin)
 
     [路由器](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin)
 
-5. 运行ZigStar GW Multi tool，在输入框中输入网关ip:5000,从PC中选择 .hex 文件，勾选Erase,Write,Verify，不要勾选auto BSL, 点击start开始烧录固件。
-    <img src="../img/LAN gateway/LAN gateway-005.png" >
+5. 运行ZigStar GW Multi tool，点击刷新按钮，选择端口号是6638的ip地址,从PC中选择 .hex 文件，勾选Erase,Write,Verify,auto BSL, 点击start开始烧录固件。
+    
+    <img src="../img/LAN gateway/LAN gateway-009.png" >
+
+
+>## 进阶
+
+    本产品结合WT32-ETH01,LILYGO® TTGO T-Internet-POE，[zigstar](https://zig-star.com/)的优秀设计进行绘制的电路，理论上支持上述硬件的Tasmota固件（需自编译），支持[ZigStar ESP Firmware](https://github.com/xyzroe/ZigStarGW-FW/releases)固件,感谢各位！
