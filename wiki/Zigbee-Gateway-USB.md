@@ -2,19 +2,19 @@
 
 >## 特征
 
-    1. TI CC2652P (RF-STAR RF-BM-2652P2)多协议无线模块，最大发射功率功率+20dBm;
-    2. 最大支持接入200+ zigbee设备;
-    3. 板载BSL按键，支持通过USB进行固件升级;
-    4. 2个LED指示灯;
-    5. 用于外部天线的 SMA 天线端口;
-    6. 通过通用的 CH340E/CH340C USB-UART 桥进行通信;
-    7. 支持 Z-Stack coordinator/router固件;
-    8. 即插即用，默认烧录coordinator固件。
-    9. 支持[Z2M](https://www.zigbee2mqtt.io/)、[ZHA](https://www.home-assistant.io/integrations/zha/);
+1. TI CC2652P (RF-STAR RF-BM-2652P2)多协议无线模块，最大发射功率功率+20dBm;
+2. 最大支持接入200+ zigbee设备;
+3. 板载BSL按键，支持通过USB进行固件升级;
+4. 2个LED指示灯;
+5. 用于外部天线的 SMA 天线端口;
+6. 通过通用的 CH340E/CH340C USB-UART 桥进行通信;
+7. 支持 Z-Stack coordinator/router固件;
+8. 即插即用，默认烧录coordinator固件。
+9. 支持[Z2M](https://www.zigbee2mqtt.io/)、[ZHA](https://www.home-assistant.io/integrations/zha/);
 
 >## 购买
 
-    [速卖通Aliexpress](https://www.aliexpress.us/item/3256803441836847.html)
+[速卖通Aliexpress](https://www.aliexpress.us/item/3256803441836847.html)
 
 ***
 
