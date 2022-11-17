@@ -1,4 +1,4 @@
-# Zigbee-Gateway-LAN
+# Zigbee-Gateway-LAN-PRO
 
 >## 特征
 
@@ -82,4 +82,4 @@
 
 >## 进阶
 
-    本产品结合WT32-ETH01,LILYGO® TTGO T-Internet-POE，[zigstar](https://zig-star.com/)的优秀设计进行绘制的电路，理论上支持上述硬件的Tasmota固件（需自编译），支持[ZigStar ESP Firmware](https://github.com/xyzroe/ZigStarGW-FW/releases)固件,感谢各位！
+**本产品结合WT32-ETH01,LILYGO® TTGO T-Internet-POE，[zigstar](https://zig-star.com/)的优秀设计进行绘制的电路，理论上支持上述硬件的Tasmota固件（需自编译），支持[ZigStar ESP Firmware](https://github.com/xyzroe/ZigStarGW-FW/releases)固件,感谢各位！**
