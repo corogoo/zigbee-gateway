@@ -19,7 +19,7 @@
 
 1. 插入USB-C电源线（5V），插入网线；
 
-2. 运行 [DTUConfigTool_V2(点击下载)](https://docs.coltsmart.com/download/client/dtu-config-tool/x64/nostatement/dtu-config-tool-x64-nostatement%20Setup.zip)，点击“搜索设备”按钮，当搜索到设备之后，复制网关的ip地址备用；另外，可根据自己需求选择IP地址获取的方式是DHCP（建议）或者手动获取，修改完成后，点击“重启修改”，
+2. 运行 [DTUConfigTool_V2(点击下载)](https://docs.coltsmart.com/download/client/dtu-config-tool/x64/nostatement/dtu-config-tool-x64-nostatement%20Setup.zip)，点击“搜索设备”按钮，当搜索到设备之后，复制网关的ip地址备用；另外，可根据自己需求选择IP地址获取的方式是DHCP（建议）或者手动获取，修改完成后，点击“提交”，然后点击”重启生效“，
 
     **注意！！！其他参数不要修改！！！**
 
