@@ -19,11 +19,16 @@
 
 1. 插入USB-C电源线（5V），插入网线；
 
-2. 运行 [DTUConfigTool(点击下载)](https://www.coltsmart.com/download/DTUConfigTool_V5.1%E4%B8%AD%E6%80%A7%E7%89%88.rar)，点击“搜索设备”按钮，当搜索到设备之后，去掉自动获取ip选项，点击写入参数，复制网关的ip地址备用。
+2. 运行 [DTUConfigTool_V2(点击下载)](https://docs.coltsmart.com/download/client/dtu-config-tool/x64/nostatement/dtu-config-tool-x64-nostatement%20Setup.zip)，点击“搜索设备”按钮，当搜索到设备之后，复制网关的ip地址备用；另外，可根据自己需求选择IP地址获取的方式是DHCP（建议）或者手动获取，修改完成后，点击“重启修改”，
 
     **注意！！！其他参数不要修改！！！**
 
+<img src="../img/LAN gateway/LAN gateway-010.jpg" >
+
+    ** ！！！ 老版本请运行 [DTUConfigTool_V1(点击下载)](https://www.coltsmart.com/download/DTUConfigTool_V5.1%E4%B8%AD%E6%80%A7%E7%89%88.rar)，点击“搜索设备”按钮，当搜索到设备之后，去掉自动获取ip选项，点击写入参数，复制网关的ip地址备用。**
+
 <img src="../img/LAN gateway/LAN gateway-001.jpg" >
+
 
 - ### 在ZHA中使用
     
@@ -39,7 +44,7 @@
 
 <img src="../img/LAN gateway/LAN gateway-003.png" >
 
-4. 输入 socket://ip_address:5000,data flow control: software,点击 “提交”。***请将“ip_address”替换为网关的ip***
+4. 输入 socket://ip_address:1053,data flow control: software,点击 “提交”。***请将“ip_address”替换为网关的ip，新版本默认端口号是 1053，老版本的默认端口号是5000***
 
 <img src="../img/LAN gateway/LAN gateway-004.png" >
 
@@ -52,9 +57,9 @@
 
     ```yaml
     serial:
-        port: tcp://ip_address:5000
+        port: tcp://ip_address:1053
     ```
-    ***请将“ip_address”替换为网关的ip***
+    ***请将“ip_address”替换为网关的ip，新版本默认端口号是 1053，老版本的默认端口号是5000***
 > ### 固件升级
 
 1. 下载[ZigStar GW Multi tool](https://github.com/xyzroe/ZigStarGW-MT/releases)，请根据您的操作系统选择对应版本；
@@ -69,6 +74,6 @@
 
     [路由器](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin)
 
-5. 运行ZigStar GW Multi tool，在输入框中输入网关ip:5000,从PC中选择 .hex 文件，勾选Erase,Write,Verify，不要勾选auto BSL, 点击start开始烧录固件。
+5. 运行ZigStar GW Multi tool，在输入框中输入网关ip:1053（!!! 新版本默认端口号是 1053，老版本的默认端口号是5000）,从PC中选择 .hex 文件，勾选Erase,Write,Verify，不要勾选auto BSL, 点击start开始烧录固件。
     
     <img src="../img/LAN gateway/LAN gateway-005.png" >
